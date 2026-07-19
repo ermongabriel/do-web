@@ -92,4 +92,21 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  build: {
+    // Split heavy, rarely-changing vendors into their own long-lived chunks
+    // so the initial app shell stays small and browsers can cache vendors
+    // independently of app code. This also clears the >500kB chunk warning.
+    rollupOptions: {
+      output: {
+        manualChunks(id) {
+          if (id.includes("node_modules")) {
+            if (id.includes("framer-motion")) return "motion-vendor";
+            if (id.includes("react-router")) return "router-vendor";
+            if (id.includes("react-dom") || id.includes("/react/")) return "react-vendor";
+          }
+          return undefined;
+        },
+      },
+    },
+  },
 })
