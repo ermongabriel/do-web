@@ -89,11 +89,11 @@ const Footer = () => {
                 <img
                   src={LOGO_IMAGE_SRC}
                   alt="Do"
-                  className="h-9 w-auto max-w-[140px]"
+                  className="h-25 w-auto max-w-[140px]"
                 />
               </Link>
 
-              <p className="mb-8 mt-6 max-w-xs leading-relaxed text-muted-foreground">
+              <p className="mb-8 max-w-xs leading-relaxed text-muted-foreground">
                 {t("footer.description")}
               </p>
 

@@ -65,7 +65,7 @@ const About = () => {
               <div className="absolute -bottom-3 -right-3 h-full w-full border-2 border-solid border-foreground" />
               <div className="relative aspect-[4/5] w-full overflow-hidden border-2 border-solid border-foreground bg-foreground/[0.03]">
                 <img
-                  src="/founder.jpg"
+                  src="/founder.jpeg"
                   alt={t("about.founderName")}
                   onError={(e) => {
                     const img = e.currentTarget

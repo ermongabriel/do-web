@@ -42,13 +42,13 @@ const RoleDashboard = lazy(() => import("@/pages/dashboard/RoleDashboard"))
 const Profile = lazy(() => import("@/pages/dashboard/profile"))
 const Setting = lazy(() => import("@/pages/dashboard/setting"))
 
-function withSuspense(
-  Component: React.LazyExoticComponent<() => JSX.Element>,
-  props?: Record<string, unknown>
+function withSuspense<P extends object>(
+  Component: React.LazyExoticComponent<(props: P) => JSX.Element>,
+  props?: P
 ) {
   return (
     <Suspense fallback={<Loader />}>
-      <Component {...props} />
+      <Component {...(props as P)} />
     </Suspense>
   )
 }

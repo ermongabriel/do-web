@@ -272,11 +272,11 @@
     "founderEyebrow": "Fondateur",
     "founderName": "Ermon Gabriel",
     "founderRole": "Fondateur & CEO, Do",
-    "founderQuote": "J'ai créé Do parce que j'ai vu des écoles se noyer dans les groupes WhatsApp — messages importants perdus, aucune structure, rien qui fonctionne quand la connexion tombe. Je voulais quelque chose qui correspond vraiment au fonctionnement des écoles, pas une autre appli de chat.",
+    "founderQuote": "J'ai créé Do parce que j'ai vu des écoles se noyer dans les groupes WhatsApp. Messages importants perdus, aucune structure, rien qui fonctionne quand la connexion tombe. Je voulais quelque chose qui correspond vraiment au fonctionnement des écoles, pas une autre appli de chat.",
     "founderBio": "Ermon a passé des années dans les salles de classe et l'organisation scolaire au Cameroun et dans la région CEMAC avant de lancer Do. Il se soucie des choses peu glamour — synchro hors ligne, consentement, et données qui vous appartiennent — car c'est ce qui rend un outil assez fiable pour une école.",
     "founderSocial": [
-      { "name": "X / Twitter", "href": "https://x.com/ermongabriel" },
-      { "name": "LinkedIn", "href": "https://www.linkedin.com/in/ermongabriel" },
+      { "name": "X / Twitter", "href": "https://x.com/ermongabriel_" },
+      { "name": "LinkedIn", "href": "https://www.linkedin.com/in/elate-ekoa-ermon-gabriel/" },
       { "name": "GitHub", "href": "https://github.com/ermongabriel" }
     ]
   },
