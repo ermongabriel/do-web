@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# App shells / auth are not meant to be indexed
+Disallow: /auth/
+Disallow: /app/
+
+Sitemap: https://do.app/sitemap.xml

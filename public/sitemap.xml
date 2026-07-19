@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://do.app/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://do.app/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://do.app/fr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://do.app/"/>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://do.app/pricing</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://do.app/pricing"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://do.app/fr/pricing"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://do.app/ai-tutor</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://do.app/ai-tutor"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://do.app/fr/ai-tutor"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://do.app/about</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://do.app/about"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://do.app/fr/about"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://do.app/contact</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://do.app/contact"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://do.app/fr/contact"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://do.app/legal/privacy</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://do.app/legal/privacy"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://do.app/fr/legal/privacy"/>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://do.app/legal/terms</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://do.app/legal/terms"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://do.app/fr/legal/terms"/>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://do.app/legal/security</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://do.app/legal/security"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://do.app/fr/legal/security"/>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+</urlset>

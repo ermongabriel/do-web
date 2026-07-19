@@ -13,7 +13,7 @@
     --card-foreground: oklch(0.148 0.004 228.8);
     --popover: oklch(1 0 0);
     --popover-foreground: oklch(0.148 0.004 228.8);
-    --primary: oklch(0.488 0.243 264.376);
+    --primary: oklch(43.206% 0.11815 250.51);
     --primary-foreground: oklch(0.97 0.014 254.604);
     --secondary: oklch(0.967 0.001 286.375);
     --secondary-foreground: oklch(0.21 0.006 285.885);
@@ -33,12 +33,15 @@
     --radius: 0;
     --sidebar: oklch(0.987 0.002 197.1);
     --sidebar-foreground: oklch(0.148 0.004 228.8);
-    --sidebar-primary: oklch(0.546 0.245 262.881);
+    --sidebar-primary: oklch(43.206% 0.11815 250.51);
     --sidebar-primary-foreground: oklch(0.97 0.014 254.604);
     --sidebar-accent: oklch(0.963 0.002 197.1);
     --sidebar-accent-foreground: oklch(0.218 0.008 223.9);
     --sidebar-border: oklch(0.925 0.005 214.3);
     --sidebar-ring: oklch(0.723 0.014 214.4);
+
+    /* gradient — light theme */
+    --gradient-color: linear-gradient(135deg, #0a528e, #bf9ce4);
 }
 
 .dark {
@@ -48,7 +51,7 @@
     --card-foreground: oklch(0.987 0.002 197.1);
     --popover: oklch(0.218 0.008 223.9);
     --popover-foreground: oklch(0.987 0.002 197.1);
-    --primary: oklch(0.424 0.199 265.638);
+    --primary: oklch(43.206% 0.11815 250.51);
     --primary-foreground: oklch(0.97 0.014 254.604);
     --secondary: oklch(0.274 0.006 286.033);
     --secondary-foreground: oklch(0.985 0 0);
@@ -67,12 +70,15 @@
     --chart-5: oklch(0.45 0.085 224.283);
     --sidebar: oklch(0.218 0.008 223.9);
     --sidebar-foreground: oklch(0.987 0.002 197.1);
-    --sidebar-primary: oklch(0.623 0.214 259.815);
+    --sidebar-primary: oklch(43.206% 0.11815 250.51);
     --sidebar-primary-foreground: oklch(0.97 0.014 254.604);
     --sidebar-accent: oklch(0.275 0.011 216.9);
     --sidebar-accent-foreground: oklch(0.987 0.002 197.1);
     --sidebar-border: oklch(1 0 0 / 10%);
     --sidebar-ring: oklch(0.56 0.021 213.5);
+
+    /* gradient — dark theme (deeper/darker tones so it doesn't clash with dark bg) */
+    --gradient-color: linear-gradient(135deg, #06325a, #6b4f96);
 }
 
 @theme inline {
@@ -131,4 +137,153 @@
   html {
     @apply font-serif;
     }
+}
+
+@layer utilities {
+  .text-stroke {
+    -webkit-text-stroke: 1.5px currentColor;
+    color: transparent;
+  }
+
+  .bg-gradient-primary {
+    background-image: var(--gradient-color);
+  }
+  .text-gradient-primary {
+    background-image: var(--gradient-color);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  .border-gradient-primary {
+    border-image: var(--gradient-color) 1;
+  }
+
+  .custom-loader {
+    width: 40px;
+    height: 60px;
+    color: var(--primary);
+    position: relative;
+  }
+
+  .custom-loader::before,
+  .custom-loader::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: currentColor;
+    clip-path: polygon(0 0, 100% 0, 100% 67%, 50% 67%, 50% 34%, 0 34%);
+    animation: sp7 2s infinite;
+  }
+
+  .custom-loader::after {
+    --s: -1, -1;
+  }
+
+  @keyframes sp7 {
+    0%,
+    10% {
+      transform: scale(var(--s, 1)) translate(0, 0) rotate(0deg);
+    }
+    33% {
+      transform: scale(var(--s, 1)) translate(0, -20px) rotate(0deg);
+    }
+    66% {
+      transform: scale(var(--s, 1)) translate(10px, -20px) rotate(-90deg);
+    }
+    90%,
+    100% {
+      transform: scale(var(--s, 1)) translate(10px, -10px) rotate(-90deg);
+    }
+  }
+}
+
+/* --- Cursor demo styles (integrated) --- */
+.demo-root {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #020617 0%, #081126 100%);
+}
+.demo-layout {
+  display: flex;
+  gap: 2rem;
+  width: 100%;
+  max-width: 960px;
+}
+.demo-column {
+  flex: 1 1 0;
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+}
+.left {
+  background: rgba(255,255,255,0.03);
+}
+.right {
+  background: rgba(255,255,255,0.08);
+}
+.left h1, .left p, .left a,
+.right h1, .right p, .right a {
+  color: #fff;
+}
+.left a { border-bottom: 2px solid #fff; }
+.right a { border-bottom: 2px solid #000; color: #000; }
+
+.hoverable {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.45rem 0.8rem;
+  border-radius: 8px;
+  background: rgba(255,255,255,0.04);
+}
+
+/* cursor styles */
+body { cursor: none; }
+.cursor { pointer-events: none; }
+.cursor__ball { position: fixed; top: 0; left: 0; z-index: 9999999; will-change: transform; }
+.cursor__ball--big {
+  width: 32px; height: 32px; margin: -16px 0 0 -16px;
+  border-radius: 9999px; border: 2px solid #fff;
+  /* black outer ring + soft shadow keeps the white ring visible on light
+     backgrounds; the white border keeps it visible on dark backgrounds */
+  box-shadow: 0 0 0 1.5px rgba(0,0,0,0.9), 0 0 6px rgba(0,0,0,0.35);
+}
+.cursor__ball--small {
+  width: 8px; height: 8px; margin: -4px 0 0 -4px;
+  border-radius: 9999px; background: #fff;
+  box-shadow: 0 0 0 1.5px rgba(0,0,0,0.9), 0 0 4px rgba(0,0,0,0.35);
+}
+
+/* hover scaling: toggled by data-scale attribute in JS (applied inline) */
+.cursor__ball--big[data-scale="4"] { border-width: 1px; }
+
+/* marquee — content is duplicated (two sets) so translating -50% loops seamlessly */
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+@keyframes marquee-reverse {
+  from { transform: translateX(-50%); }
+  to { transform: translateX(0); }
+}
+.marquee {
+  width: max-content;
+  animation: marquee 32s linear infinite;
+}
+.marquee-reverse {
+  width: max-content;
+  animation: marquee-reverse 32s linear infinite;
+}
+/* pause on hover for a more polished, controllable feel */
+.marquee:hover,
+.marquee-reverse:hover {
+  animation-play-state: paused;
+}
+/* respect users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .marquee,
+  .marquee-reverse {
+    animation: none;
+  }
 }
