@@ -1,8 +1,11 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
-@import "@fontsource-variable/roboto-slab";
-@import "@fontsource-variable/inter";
+/* Only load the subsets Do actually uses (English + French) to keep the
+   font payload small. The wildcard "@fontsource-variable/*" import pulls
+   cyrillic/greek/vietnamese too, which inflated first load and hurt LCP. */
+@import "@fontsource-variable/roboto-slab/wght.css";
+@import "@fontsource-variable/inter/wght.css";
 
 @custom-variant dark (&:is(.dark *));
 

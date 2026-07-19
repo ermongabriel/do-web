@@ -5,8 +5,8 @@
     <link rel="icon" type="image/svg+xml" href="/icon.png" />
     <link rel="apple-touch-icon" href="/icon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="linear-gradient(135deg, #0a528e, #bf9ce4)" /> 
-    <meta name="color-scheme" content="light dark" /> 
+    <meta name="theme-color" content="#0a528e" />
+    <meta name="color-scheme" content="light dark" />
 
     <title>Do | Structured school communication</title>
     <meta
@@ -33,6 +33,35 @@
       content="One structured, offline-first space for school communication — content, polls, and a consent-based AI tutor for every teacher."
     />
     <meta name="twitter:image" content="/icon.png" />
+
+    <!-- Speed: preconnect to the font origin so the variable fonts can
+         start downloading the moment the @font-face rules are parsed
+         (reduces FCP/CLS). Fonts use unicode-range, so only the latin
+         subsets needed for EN/FR are actually fetched. -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://do.app" />
+
+    <!-- Anti-FOUC: apply the saved/system theme before first paint to avoid
+         a white flash and layout/color shift (CLS). Kept inline + tiny. -->
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem("do-theme");
+          var d =
+            t === "dark" ||
+            (!t && window.matchMedia("(prefers-color-scheme: dark)").matches);
+          if (d) document.documentElement.classList.add("dark");
+        } catch (e) {}
+      })();
+    </script>
+
+    <!-- Critical paint style: reserve the page background so the SPA shell
+         doesn't flash white and shift content (helps CLS). -->
+    <style>
+      html { background: #ffffff; }
+      html.dark { background: #0a0e1a; }
+      #root { min-height: 100vh; }
+    </style>
   </head>
   <body>
     <div id="root"></div>
