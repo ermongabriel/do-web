@@ -16,8 +16,8 @@ const Landing = () => {
   return (
     <>
       <Seo
-        title="Structured school communication, offline-first"
-        description="Do replaces scattered WhatsApp groups with one structured, offline-first space for school communication — content, polls, and a consent-based AI tutor for every teacher."
+        title="Structured institutional communication, offline-first"
+        description="Do replaces scattered WhatsApp groups with one structured, offline-first space for institutional communication — content, polls, and a consent-based AI tutor for every trainer."
         path="/"
       />
       {/* <Cursor /> */}

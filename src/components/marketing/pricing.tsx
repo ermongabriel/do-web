@@ -11,11 +11,11 @@ import { shadowButton } from "@/lib/utils"
 const plans = [
   {
     name: "Free",
-    description: "A single classroom or very small school",
+    description: "A single cohort or very small institution",
     audience: "pricing.audience.free",
     priceXaf: { monthly: 0, annual: 0 },
     features: [
-      "Up to 20 students",
+      "Up to 20 learners",
       "Announcements & content",
       "Offline-first sync",
       "Instant polls & feedback",
@@ -26,11 +26,11 @@ const plans = [
   },
   {
     name: "Basic",
-    description: "Replace WhatsApp chaos school-wide",
+    description: "Replace WhatsApp chaos institution-wide",
     audience: "pricing.audience.basic",
     priceXaf: { monthly: 20000, annual: 16700 },
     features: [
-      "Unlimited students & teachers",
+      "Unlimited learners & trainers",
       "Offline-first sync",
       "Instant polls & feedback",
       "AI content summarization",
@@ -49,7 +49,7 @@ const plans = [
       "300 AI avatar minutes / month",
       "Semantic search across content",
       "Class comprehension analytics",
-      "Shared minute pool, school-wide",
+      "Shared minute pool, institution-wide",
     ],
     cta: "Join waitlist",
     popular: true,

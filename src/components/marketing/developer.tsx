@@ -3,15 +3,15 @@ import { useLocale } from "@/locale";
 
 // This section originally showcased a public SDK ("npm install...").
 // Do doesn't have (or need) a public developer SDK — its users are
-// schools, teachers, and students, not third-party integrators. Rather
+// institutions, trainers, and learners, not third-party integrators. Rather
 // than invent fake install commands, this is repointed at a real
-// audience Do does have: the school IT lead / procurement officer who
+// audience Do does have: the institution IT lead / procurement officer who
 // needs real answers before signing off, not marketing copy.
 const trustTopics = [
   {
     id: "ownership",
     label: "Data Ownership",
-    content: `Your school's data belongs to your school.
+    content: `Your institution's data belongs to your institution.
 
 - Full export available anytime, in
   standard formats
@@ -26,12 +26,12 @@ const trustTopics = [
     content: `Every AI avatar interaction is
 disclosed and logged.
 
-- Teachers opt in explicitly before
+- Trainers opt in explicitly before
   any avatar or voice is created
-- Students are told they're talking
+- Learners are told they're talking
   to an AI, every session
 - Full transcripts available for
-  teacher and admin review`,
+  trainer and admin review`,
   },
   {
     id: "security",
@@ -41,8 +41,8 @@ from day one, not bolted on later.
 
 - TLS encryption in transit
 - Role-based access control per
-  school (admin/teacher/student)
-- Per-school data isolation in a
+  institution (admin/trainer/learner)
+- Per-institution data isolation in a
   multi-tenant setup`,
   },
 ];
@@ -66,7 +66,7 @@ const trustPoints = [
   {
     id: "scale",
     title: "Built for scale",
-    description: "Isolated data between schools, by design.",
+    description: "Isolated data between institutions, by design.",
   },
 ];
 

@@ -57,7 +57,7 @@ const metrics = [
     value: 400,
     suffix: "+",
     prefix: "",
-    label: "Schools we're building toward by Year 5",
+    label: "Institutions & training programs we're building toward by Year 5",
   },
   {
     value: 3,

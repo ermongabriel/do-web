@@ -14,20 +14,20 @@
   "dashboard": {
     "welcome": "Welcome back",
     "admin": "Platform Admin",
-    "schoolAdmin": "School Admin",
+    "schoolAdmin": "Institution Admin",
     "staff": "Staff",
-    "teacher": "Teacher",
-    "student": "Student",
+    "teacher": "Trainer",
+    "student": "Learner",
     "parent": "Parent",
     "signOut": "Sign out",
     "yourArea": "This is your dedicated workspace. Role-specific tools will live here."
   },
   "hero": {
-    "eyebrow": "For schools, teachers & students",
-    "description": "Do replaces scattered WhatsApp groups with one structured space for school communication — content, polls, and an AI tutor for every teacher, built to work even when the connection doesn't.",
+    "eyebrow": "For institutions, training centers & learning organizations",
+    "description": "Do replaces scattered communication tools with one structured space for institutions, training schools, and learning teams — content, polls, and AI-powered support built to work even when the connection doesn't.",
     "titlePart1": "The platform",
     "titleTo": "to",
-    "word1": "teach",
+    "word1": "train",
     "word2": "learn",
     "word3": "connect",
     "word4": "thrive",
@@ -36,8 +36,8 @@
   },
   "features": {
     "capabilities": "Capabilities",
-    "headingLine1": "Everything a school needs.",
-    "headingLine2": "Nothing WhatsApp gives you.",
+    "headingLine1": "Everything your institution needs.",
+    "headingLine2": "Nothing your team should have to improvise.",
     "items": {
       "01": {
         "title": "Offline-First Access",
@@ -49,7 +49,7 @@
       },
       "03": {
         "title": "Structured Communication",
-        "description": "One space for announcements, class content, and instant polls — built for a school, not a group chat. No more messages lost in the scroll."
+        "description": "One space for announcements, class content, and instant polls — built for an institution, not a group chat. No more messages lost in the scroll."
       },
       "04": {
         "title": "Consent & Safety by Design",
@@ -60,22 +60,22 @@
   "howItWork": {
     "subtitle": "How Do works",
     "titleLine1": "Three steps.",
-    "titleLine2": "One less WhatsApp group.",
+    "titleLine2": "One less juggling act.",
     "steps": [
       {
         "number": "I",
-        "title": "Set up your school",
-        "description": "Create your school's workspace and invite teachers and students. No technical setup, no IT department required."
+        "title": "Set up your institution",
+        "description": "Create your organization's workspace and invite staff, trainers, and learners. No technical setup, no IT department required."
       },
       {
         "number": "II",
-        "title": "Teachers share & build their AI tutor",
-        "description": "Upload class content and, if you choose, record a consent-based AI tutor grounded only in your own material."
+        "title": "Teams share content & build their AI tutor",
+        "description": "Upload course material and, if you choose, build a consent-based AI tutor grounded only in your own material."
       },
       {
         "number": "III",
-        "title": "Students learn, anytime",
-        "description": "Content and polls sync automatically, even offline. Students can ask the AI tutor a question whenever they need to."
+        "title": "Learners access support, anytime",
+        "description": "Content and polls sync automatically, even offline. Learners can ask the AI tutor a question whenever they need to."
       }
     ],
     "cookieNotice": "This website uses cookies — please accept them to continue using all features.",
@@ -85,8 +85,8 @@
   "infrastructure": {
     "eyebrow": "Reliability",
     "titleLine1": "Built to work",
-    "titleLine2": "anywhere school does.",
-    "description": "Do is designed around one hard constraint: connectivity you can't count on. Content, class materials, and polls sync the moment a connection returns, so a shaky signal never stands between a student and their class.",
+    "titleLine2": "anywhere learning happens.",
+    "description": "Do is designed around one hard constraint: connectivity you can't count on. Content, course materials, and polls sync the moment a connection returns, so a shaky signal never stands between a learner and their program.",
     "stats": {
       "offline": "Offline",
       "offlineSub": "First, not an afterthought",
@@ -98,8 +98,8 @@
     "syncStatus": "Sync Status",
     "syncing": "Syncing normally",
     "syncItems": [
-      { "feature": "Announcements", "detail": "School & class updates", "status": "Offline-ready", "offlineReady": true },
-      { "feature": "Class Content", "detail": "Docs, audio, video", "status": "Offline-ready", "offlineReady": true },
+      { "feature": "Announcements", "detail": "Program & cohort updates", "status": "Offline-ready", "offlineReady": true },
+      { "feature": "Course Content", "detail": "Docs, audio, video", "status": "Offline-ready", "offlineReady": true },
       { "feature": "Polls", "detail": "Comprehension checks", "status": "Offline-ready", "offlineReady": true },
       { "feature": "AI Tutor Calls", "detail": "Live avatar sessions", "status": "Requires connection", "offlineReady": false }
     ]
@@ -111,7 +111,7 @@
     "note": "Roadmap targets, not live data — we're early, and we'd rather be honest about that than look further along than we are.",
     "items": [
       { "value": 2, "suffix": "", "prefix": "", "label": "Languages at launch — English & French" },
-      { "value": 400, "suffix": "+", "prefix": "", "label": "Schools we're building toward by Year 5" },
+      { "value": 400, "suffix": "+", "prefix": "", "label": "Institutions & training programs we're building toward by Year 5" },
       { "value": 3, "suffix": "s", "prefix": "<", "label": "Target AI tutor response time per turn" },
       { "value": 0, "suffix": "", "prefix": "", "label": "WhatsApp groups needed once you're on Do" }
     ]
@@ -119,7 +119,7 @@
   "integration": {
     "eyebrow": "Integrations",
     "titleLine1": "Works with what",
-    "titleLine2": "your school already uses.",
+    "titleLine2": "your institution already uses.",
     "description": "Sign in with Google or Microsoft. Pay by mobile money, card, or invoice. No new accounts to manage.",
     "note": "Roadmap integrations - not all live yet.",
     "items": [
@@ -145,47 +145,47 @@
     "certifications": ["SOC 2 Type II", "ISO 27001", "GDPR-ready"]
   },
   "developer": {
-    "eyebrow": "For school IT & administrators",
+    "eyebrow": "For institution IT & administrators",
     "titleLine1": "Built for the hard",
     "titleLine2": "questions.",
-    "description": "Before a school signs on, someone reasonably asks about data ownership, consent, and security. Here's what we can tell you today — plainly, not in a sales deck.",
+    "description": "Before an institution signs on, someone reasonably asks about data ownership, consent, and security. Here's what we can tell you today — plainly, not in a sales deck.",
     "points": {
       "data": { "title": "Data stays yours", "description": "Full export anytime. No lock-in." },
       "consent": { "title": "Consent-logged AI", "description": "Every avatar interaction disclosed and recorded." },
       "transit": { "title": "Encrypted in transit", "description": "TLS everywhere, role-based access." },
-      "scale": { "title": "Built for scale", "description": "Isolated data between schools, by design." }
+      "scale": { "title": "Built for scale", "description": "Isolated data between institutions, by design." }
     },
     "topics": {
-      "ownership": { "label": "Data Ownership", "content": "Your school's data belongs to your school.\n\n- Full export available anytime, in standard formats\n- No lock-in: leaving Do means taking your data with you\n- Deleted data is actually deleted, not just hidden" },
-      "consent": { "label": "Consent & AI", "content": "Every AI avatar interaction is disclosed and logged.\n\n- Teachers opt in explicitly before any avatar or voice is created\n- Students are told they're talking to an AI, every session\n- Full transcripts available for teacher and admin review" },
-      "security": { "label": "Security", "content": "Built with standard safeguards from day one, not bolted on later.\n\n- TLS encryption in transit\n- Role-based access control per school (admin/teacher/student)\n- Per-school data isolation in a multi-tenant setup" }
+      "ownership": { "label": "Data Ownership", "content": "Your institution's data belongs to your institution.\n\n- Full export available anytime, in standard formats\n- No lock-in: leaving Do means taking your data with you\n- Deleted data is actually deleted, not just hidden" },
+      "consent": { "label": "Consent & AI", "content": "Every AI avatar interaction is disclosed and logged.\n\n- Trainers opt in explicitly before any avatar or voice is created\n- Learners are told they're talking to an AI, every session\n- Full transcripts available for trainer and admin review" },
+      "security": { "label": "Security", "content": "Built with standard safeguards from day one, not bolted on later.\n\n- TLS encryption in transit\n- Role-based access control per institution (admin/trainer/learner)\n- Per-institution data isolation in a multi-tenant setup" }
     },
     "readSecurity": "Read our security overview",
     "requestDpa": "Request a data processing agreement"
   },
   "testimonial": {
     "label": "Why we're building this",
-    "founderQuote": "I built Do because I watched schools drown in WhatsApp groups. Important messages lost, no structure, nothing working when the connection dropped. I wanted something that actually fit how schools work, not another chat app.",
+    "founderQuote": "I built Do because I watched institutions struggle with scattered communication, weak follow-up, and disrupted learning when the connection dropped. I wanted something that actually fit how training programs and learning organizations work, not another chat app.",
     "founderAuthor": "Ermon Gabriel",
     "founderRole": "Founder, Do",
     "valuesLabel": "What Do stands for",
     "whereTitle": "Where we are",
-    "whereBody": "Early. Building in public. Looking for our first pilot schools.",
+    "whereBody": "Early. Building in public. Looking for our first pilot institutions and training programs.",
     "joinWaitlist": "Join the waitlist →",
     "values": [
       "Offline-First",
       "Consent-First AI",
       "Bilingual — EN / FR",
-      "Built for CEMAC Schools",
+      "Built for Institutions & Training Organizations",
       "Structured, Not Chaotic",
-      "Grounded in the Teacher's Own Material"
+      "Grounded in the Team's Own Material"
     ]
   },
   "pricing": {
     "eyebrow": "Pricing",
     "titleLine1": "Simple, transparent",
     "titleLine2": "pricing",
-    "description": "Start free for a single classroom. Scale up when you're ready for the AI Avatar Tutor.",
+    "description": "Choose a plan that fits your institution, training center, or growing learning organization.",
     "monthly": "Monthly",
     "annual": "Annual",
     "billingToggle": "Toggle annual billing",
@@ -194,10 +194,10 @@
     "mostPopular": "Most Popular",
     "perMonth": "/mo",
     "audience": {
-      "free": "Best for a single classroom",
-      "basic": "Best for a small school",
-      "standard": "Best for pilot schools",
-      "premium": "Best for districts & groups"
+      "free": "Best for a small pilot or training cohort",
+      "basic": "Best for a growing training school or institution",
+      "standard": "Best for multi-site institutions with large cohorts",
+      "premium": "Best for academies, networks, and enterprise training programs"
     },
     "noteAll": "All plans include offline-first sync, TLS encryption, and role-based access control.",
     "compareFeatures": "Compare all features",
@@ -205,33 +205,33 @@
     "plans": [
       {
         "name": "Free",
-        "description": "A single classroom or very small school",
+        "description": "A small pilot or early learning group",
         "priceXaf": { "monthly": 0, "annual": 0 },
-        "features": ["Up to 20 students", "Announcements & content", "Offline-first sync", "Instant polls & feedback", "No AI avatar minutes"],
+        "features": ["Up to 20 students", "Announcements & content", "Offline-first sync", "Instant polls & feedback", "No AI features"],
         "cta": "Get started free",
         "popular": false
       },
       {
         "name": "Basic",
-        "description": "Replace WhatsApp chaos school-wide",
+        "description": "A growing institution or training center",
         "priceXaf": { "monthly": 20000, "annual": 16700 },
-        "features": ["Unlimited students & teachers", "Offline-first sync", "Instant polls & feedback", "AI content summarization", "No AI avatar minutes"],
+        "features": ["Up to 500 students", "Offline-first sync", "Instant polls & feedback", "AI content summarization", "No AI avatar minutes"],
         "cta": "Join waitlist",
         "popular": false
       },
       {
         "name": "Standard",
-        "description": "Ready to pilot the AI Avatar Tutor",
+        "description": "A larger organization with broad rollout",
         "priceXaf": { "monthly": 85000, "annual": 70800 },
-        "features": ["Everything in Basic", "300 AI avatar minutes / month", "Semantic search across content", "Class comprehension analytics", "Shared minute pool, school-wide"],
+        "features": ["Up to 5,000 students", "Everything in Basic", "No AI features", "Semantic search across content", "Shared communication workspace"],
         "cta": "Join waitlist",
         "popular": true
       },
       {
         "name": "Premium",
-        "description": "Larger institutions, heavy avatar use",
+        "description": "Multi-site programs and high-volume usage",
         "priceXaf": { "monthly": 200000, "annual": 166700 },
-        "features": ["Everything in Standard", "1,000 AI avatar minutes / month", "Group \"office hours\" sessions", "Priority support", "Minute rollover (annual plans)"],
+        "features": ["Unlimited students", "Everything in Standard", "Web-based AI tutor access", "Priority support", "Advanced admin controls"],
         "cta": "Talk to us",
         "popular": false
       }
@@ -239,8 +239,8 @@
   },
   "cta": {
     "titleLine1": "Ready for one less",
-    "titleLine2": "WhatsApp group?",
-    "description": "Join the waitlist and be among the first schools to try Do - structured communication, offline-first, with a consent-based AI tutor built from your own teachers' material.",
+    "titleLine2": "tool to manage?",
+    "description": "Join the waitlist and be among the first institutions, training centers, and learning organizations to try Do — structured communication, offline-first, with a consent-based AI tutor built from your own content.",
     "primary": "Join waitlist",
     "secondary": "Talk to us",
     "note": "No credit card required",
@@ -256,24 +256,24 @@
   "about": {
     "eyebrow": "About Do",
     "titleLine1": "We're replacing",
-    "titleLine2": "WhatsApp with school.",
-    "intro": "Do gives every school one structured space for communication — content, polls, and a consent-based AI tutor for each teacher. Built offline-first for the classrooms that need it most.",
-    "missionTitle": "Why we exist",
-    "mission": "Schools across CEMAC lose important messages in group chats, have no structure, and go dark the moment the connection drops. We're building the calm, reliable alternative — designed for how schools actually work.",
-    "valuesTitle": "What we stand for",
-    "stats": [
-      { "value": "CEMAC", "label": "Built for the region's schools" },
-      { "value": "EN / FR", "label": "Bilingual from day one" },
-      { "value": "Offline", "label": "First, not an afterthought" },
-      { "value": "Consent", "label": "First AI, always disclosed" }
-    ],
-    "teamTitle": "Building in public",
-    "teamBody": "We're early and small, shipping in the open and looking for our first pilot schools. If that's you, we'd love to talk.",
-    "founderEyebrow": "Founder",
-    "founderName": "Ermon Gabriel",
-    "founderRole": "Founder & CEO, Do",
-    "founderQuote": "I built Do because I watched schools drown in WhatsApp groups. Important messages lost, no structure, nothing working when the connection dropped. I wanted something that actually fits how schools work, not another chat app.",
-    "founderBio": "Ermon spent years inside classrooms and school operations across Cameroon and the CEMAC region before starting Do. He cares about the unglamorous things — offline sync, consent, and data that stays yours — because that's what makes a tool trustworthy enough for a school.",
+    "titleLine2": "chaos with structure.",
+    "intro": "Do gives every institution one structured space for communication — content, polls, and a consent-based AI tutor for each trainer or teacher. Built offline-first for the learning environments that need it most.",
+      "missionTitle": "Why we exist",
+      "mission": "Institutions across CEMAC lose important messages in group chats, have no structure, and go dark the moment the connection drops. We're building the calm, reliable alternative — designed for how training programs and learning organizations actually work.",
+      "valuesTitle": "What we stand for",
+      "stats": [
+        { "value": "CEMAC", "label": "Built for the region's institutions" },
+        { "value": "EN / FR", "label": "Bilingual from day one" },
+        { "value": "Offline", "label": "First, not an afterthought" },
+        { "value": "Consent", "label": "First AI, always disclosed" }
+      ],
+      "teamTitle": "Building in public",
+      "teamBody": "We're early and small, shipping in the open and looking for our first pilot institutions. If that's you, we'd love to talk.",
+      "founderEyebrow": "Founder",
+      "founderName": "Ermon Gabriel",
+      "founderRole": "Founder & CEO, Do",
+      "founderQuote": "I built Do because I watched institutions drown in WhatsApp groups. Important messages lost, no structure, nothing working when the connection dropped. I wanted something that actually fits how training programs and learning organizations work, not another chat app.",
+      "founderBio": "Ermon spent years inside classrooms and institution operations across Cameroon and the CEMAC region before starting Do. He cares about the unglamorous things — offline sync, consent, and data that stays yours — because that's what makes a tool trustworthy enough for an institution.",
     "founderSocial": [
       { "name": "X / Twitter", "href": "https://x.com/ermongabriel_" },
       { "name": "LinkedIn", "href": "https://www.linkedin.com/in/elate-ekoa-ermon-gabriel/" },
@@ -283,12 +283,12 @@
   "contact": {
     "eyebrow": "Contact",
     "titleLine1": "Let's talk about",
-    "titleLine2": "your school.",
+    "titleLine2": "your institution.",
     "intro": "Pilots, partnerships, press, or just a question — reach the team and we'll get back to you.",
     "emailLabel": "Email",
-    "emailPlaceholder": "you@school.edu",
+    "emailPlaceholder": "you@institution.org",
     "messageLabel": "Message",
-    "messagePlaceholder": "Tell us about your school and what you're hoping for…",
+    "messagePlaceholder": "Tell us about your institution and what you're hoping for…",
     "submit": "Send message",
     "note": "No spam. We reply to every serious message.",
     "directTitle": "Other ways to reach us",
@@ -299,66 +299,66 @@
   "aiTutor": {
     "eyebrow": "AI Tutor",
     "titleLine1": "An AI tutor",
-    "titleLine2": "grounded in your teacher.",
-    "intro": "Every teacher can build a consent-based AI tutor of themselves — grounded only in their own course material. Students always have someone to ask, even when the connection drops.",
+    "titleLine2": "grounded in your trainer.",
+    "intro": "Every trainer can build a consent-based AI tutor of themselves — grounded only in their own course material. Learners always have someone to ask, even when the connection drops.",
     "howTitle": "How it works",
     "steps": [
-      { "number": "I", "title": "Consent first", "description": "Teachers opt in explicitly before any avatar or voice is created. Nothing is generated without a clear yes." },
-      { "number": "II", "title": "Grounded in your material", "description": "The tutor is built only from content the teacher uploads — never from the open internet, so answers stay on-topic and trustworthy." },
-      { "number": "III", "title": "Always disclosed", "description": "Students are told, every session, that they're talking to an AI. No pretending to be a human." }
+      { "number": "I", "title": "Consent first", "description": "Trainers opt in explicitly before any avatar or voice is created. Nothing is generated without a clear yes." },
+      { "number": "II", "title": "Grounded in your material", "description": "The tutor is built only from content the trainer uploads — never from the open internet, so answers stay on-topic and trustworthy." },
+      { "number": "III", "title": "Always disclosed", "description": "Learners are told, every session, that they're talking to an AI. No pretending to be a human." }
     ],
     "safetyTitle": "Built safe, by design",
     "safety": [
-      { "title": "Consent-logged", "description": "Every avatar interaction is disclosed and recorded, with transcripts available to teachers and admins." },
-      { "title": "On-topic only", "description": "The tutor can only answer from the teacher's own material — no off-script answers, no web drift." },
-      { "title": "Role-based access", "description": "Teachers control their own avatar and voice. Schools stay isolated from one another." }
+      { "title": "Consent-logged", "description": "Every avatar interaction is disclosed and recorded, with transcripts available to trainers and admins." },
+      { "title": "On-topic only", "description": "The tutor can only answer from the trainer's own material — no off-script answers, no web drift." },
+      { "title": "Role-based access", "description": "Trainers control their own avatar and voice. Institutions stay isolated from one another." }
     ],
-    "ctaTitle": "Bring the AI tutor to your school",
-    "ctaBody": "Join the waitlist and be among the first schools to pilot a tutor that actually fits how your classrooms work."
+    "ctaTitle": "Bring the AI tutor to your institution",
+    "ctaBody": "Join the waitlist and be among the first institutions to pilot a tutor that actually fits how your programs work."
   },
   "legal": {
     "privacy": {
-      "title": "Privacy Policy",
-      "intro": "This policy explains what we collect, why, and the choices you have. Do is built for schools, so we treat student data with extra care.",
-      "updated": "Last updated: July 2026",
-      "dataTitle": "What we collect",
-      "dataBody": "We collect account details (email, role, school), the class content you upload, and the consented AI tutor interactions. We do not sell personal data.",
-      "useTitle": "How we use it",
-      "useBody": "To provide offline-first sync, run the AI tutor you consent to, and keep your school's workspace working. Everything is scoped to your school.",
-      "rightsTitle": "Your rights",
-      "rightsBody": "Your school owns its data and can export or delete it at any time. Students and parents are told when they're speaking to an AI, every session.",
+        "title": "Privacy Policy",
+        "intro": "This policy explains what we collect, why, and the choices you have. Do is built for institutions, so we treat learner data with extra care.",
+        "updated": "Last updated: July 2026",
+        "dataTitle": "What we collect",
+        "dataBody": "We collect account details (email, role, institution), the course content you upload, and the consented AI tutor interactions. We do not sell personal data.",
+        "useTitle": "How we use it",
+        "useBody": "To provide offline-first sync, run the AI tutor you consent to, and keep your institution's workspace working. Everything is scoped to your institution.",
+        "rightsTitle": "Your rights",
+        "rightsBody": "Your institution owns its data and can export or delete it at any time. Learners and parents are told when they're speaking to an AI, every session.",
       "contactTitle": "Contact",
       "contactBody": "Questions about your data? Email privacy@do.app and we'll respond within 30 days."
     },
     "terms": {
-      "title": "Terms of Service",
-      "intro": "These terms govern your use of Do. By using the product you agree to them. They're written in plain language on purpose.",
-      "updated": "Last updated: July 2026",
-      "useTitle": "Acceptable use",
-      "useBody": "Use Do for legitimate school communication. Don't misuse others' data, upload unlawful content, or attempt to circumvent safety controls.",
-      "accountsTitle": "Accounts & roles",
-      "accountsBody": "Access is role-based: admins, school admins, staff, teachers, students, and parents each see only what their role permits.",
-      "liabilityTitle": "Availability",
-      "liabilityBody": "Do is in active development. We aim for reliability but make no uptime guarantees while the product is early.",
-      "changesTitle": "Changes",
-      "changesBody": "We may update these terms and will notify schools before material changes take effect."
+        "title": "Terms of Service",
+        "intro": "These terms govern your use of Do. By using the product you agree to them. They're written in plain language on purpose.",
+        "updated": "Last updated: July 2026",
+        "useTitle": "Acceptable use",
+        "useBody": "Use Do for legitimate institutional communication. Don't misuse others' data, upload unlawful content, or attempt to circumvent safety controls.",
+        "accountsTitle": "Accounts & roles",
+        "accountsBody": "Access is role-based: admins, institution admins, staff, trainers, learners, and parents each see only what their role permits.",
+        "liabilityTitle": "Availability",
+        "liabilityBody": "Do is in active development. We aim for reliability but make no uptime guarantees while the product is early.",
+        "changesTitle": "Changes",
+        "changesBody": "We may update these terms and will notify institutions before material changes take effect."
     },
     "security": {
-      "title": "Security & Trust",
-      "intro": "Trust isn't a feature we bolt on later. Here's how Do is built to keep school data safe from day one.",
-      "updated": "Last updated: July 2026",
-      "encryptTitle": "Encryption",
-      "encryptBody": "Data is encrypted in transit (TLS 1.3) and at rest (AES-256). Every request is authenticated and authorized.",
-      "consentTitle": "Consent-first AI",
-      "consentBody": "Every AI tutor interaction is disclosed and logged. Teachers opt in before any avatar or voice is created; students are told they're talking to an AI.",
-      "isolationTitle": "Data isolation",
-      "isolationBody": "Schools are isolated from each other by design in a multi-tenant setup, with role-based access control (admin / teacher / student).",
+        "title": "Security & Trust",
+        "intro": "Trust isn't a feature we bolt on later. Here's how Do is built to keep institutional data safe from day one.",
+        "updated": "Last updated: July 2026",
+        "encryptTitle": "Encryption",
+        "encryptBody": "Data is encrypted in transit (TLS 1.3) and at rest (AES-256). Every request is authenticated and authorized.",
+        "consentTitle": "Consent-first AI",
+        "consentBody": "Every AI tutor interaction is disclosed and logged. Trainers opt in before any avatar or voice is created; learners are told they're talking to an AI.",
+        "isolationTitle": "Data isolation",
+        "isolationBody": "Institutions are isolated from each other by design in a multi-tenant setup, with role-based access control (admin / trainer / learner).",
       "certTitle": "Standards",
       "certBody": "We target SOC 2 Type II, ISO 27001, GDPR and HIPAA-aligned practices as the product matures."
     }
   },
   "footer": {
-    "description": "Structured school communication and an AI tutor for every teacher — built offline-first, in English and French.",
+    "description": "Structured institutional communication and an AI tutor for every trainer — built offline-first, in English and French.",
     "colProduct": "Product",
     "colCompany": "Company",
     "colLegal": "Legal",
@@ -397,13 +397,13 @@
     "pageTitle": "Join the waitlist — Do",
     "eyebrow": "Early access",
     "title": "Join the waitlist",
-    "description": "Be among the first schools to experience Do. No spam, no noise — just one message when it's your turn.",
+    "description": "Be among the first institutions to experience Do. No spam, no noise — just one message when it's your turn.",
     "firstNameLabel": "First name",
     "firstNamePlaceholder": "Ama",
     "lastNameLabel": "Last name",
     "lastNamePlaceholder": "Ngah",
-    "schoolLabel": "School / Institution",
-    "schoolPlaceholder": "e.g. Lycée Bilingue de Yaoundé",
+    "schoolLabel": "Institution",
+    "schoolPlaceholder": "e.g. Institut de Formation de Yaoundé",
     "emailLabel": "Email address",
     "emailPlaceholder": "you@school.edu",
     "submit": "Join the waitlist",

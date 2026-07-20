@@ -3,9 +3,9 @@ import { useLocale } from "@/locale"
 
 const SITE_NAME = "Do"
 const SITE_URL = "https://do.app"
-const DEFAULT_TITLE = "Do | Structured school communication"
+const DEFAULT_TITLE = "Do | Structured institutional communication"
 const DEFAULT_DESCRIPTION =
-  "Do replaces scattered WhatsApp groups with one structured, offline-first space for school communication — content, polls, and a consent-based AI tutor for every teacher."
+  "Do replaces scattered WhatsApp groups with one structured, offline-first space for institutional communication — content, polls, and a consent-based AI tutor for every trainer."
 
 type SeoProps = {
   title?: string

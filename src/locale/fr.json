@@ -14,20 +14,20 @@
   "dashboard": {
     "welcome": "Bon retour",
     "admin": "Admin plateforme",
-    "schoolAdmin": "Admin école",
+    "schoolAdmin": "Admin institution",
     "staff": "Personnel",
-    "teacher": "Enseignant",
-    "student": "Élève",
+    "teacher": "Formateur",
+    "student": "Apprenant",
     "parent": "Parent",
     "signOut": "Se déconnecter",
     "yourArea": "Voici votre espace dédié. Les outils propres à votre rôle y apparaîtront."
   },
   "hero": {
-    "eyebrow": "Pour écoles, enseignants et élèves",
-    "description": "Do remplace les groupes WhatsApp dispersés par un espace structuré pour la communication scolaire — contenu, sondages et un tuteur IA pour chaque enseignant, conçu pour fonctionner même lorsque la connexion ne le permet pas.",
+    "eyebrow": "Pour les institutions, centres de formation et organisations de formation",
+    "description": "Do remplace les outils de communication dispersés par un espace structuré pour les institutions, écoles de formation et équipes d'apprentissage — contenu, sondages et support assisté par IA, conçu pour fonctionner même lorsque la connexion ne le permet pas.",
     "titlePart1": "La plateforme",
     "titleTo": "pour",
-    "word1": "enseigner",
+    "word1": "former",
     "word2": "centrer",
     "word3": "connecter",
     "word4": "prospérer",
@@ -36,8 +36,8 @@
   },
   "features": {
     "capabilities": "Capacités",
-    "headingLine1": "Tout ce dont une école a besoin.",
-    "headingLine2": "Rien que WhatsApp vous donne.",
+    "headingLine1": "Tout ce dont votre institution a besoin.",
+    "headingLine2": "Rien que votre équipe devrait avoir à improviser.",
     "items": {
       "01": {
         "title": "Accès hors ligne",
@@ -49,7 +49,7 @@
       },
       "03": {
         "title": "Communication structurée",
-        "description": "Un espace unique pour les annonces, le contenu de cours et les sondages instantanés — conçu pour l'école, pas pour un chat de groupe. Plus de messages perdus dans le fil."
+        "description": "Un espace unique pour les annonces, le contenu de cours et les sondages instantanés — conçu pour l'institution, pas pour un chat de groupe. Plus de messages perdus dans le fil."
       },
       "04": {
         "title": "Consentement et sécurité intégrés",
@@ -60,22 +60,22 @@
   "howItWork": {
     "subtitle": "Comment ça marche",
     "titleLine1": "Trois étapes.",
-    "titleLine2": "Un groupe WhatsApp en moins.",
+    "titleLine2": "Un peu moins de casse-tête.",
     "steps": [
       {
         "number": "I",
-        "title": "Configurez votre école",
-        "description": "Créez l'espace de travail de votre école et invitez enseignants et élèves. Aucune configuration technique requise."
+        "title": "Configurez votre institution",
+        "description": "Créez l'espace de travail de votre organisation et invitez le personnel, les formateurs et les apprenants. Aucune configuration technique requise."
       },
       {
         "number": "II",
-        "title": "Les enseignants partagent et créent leur tuteur IA",
+        "title": "Les équipes partagent le contenu et créent leur tuteur IA",
         "description": "Téléversez le contenu de cours et, si vous le souhaitez, créez un tuteur IA basé sur votre matériel."
       },
       {
         "number": "III",
-        "title": "Les élèves apprennent, à tout moment",
-        "description": "Le contenu et les sondages se synchronisent automatiquement, même hors ligne. Les élèves peuvent interroger le tuteur IA quand ils en ont besoin."
+        "title": "Les apprenants accèdent à l'aide, à tout moment",
+        "description": "Le contenu et les sondages se synchronisent automatiquement, même hors ligne. Les apprenants peuvent interroger le tuteur IA quand ils en ont besoin."
       }
     ],
     "cookieNotice": "Ce site utilise des cookies — veuillez les accepter pour profiter de toutes les fonctionnalités.",
@@ -85,8 +85,8 @@
   "infrastructure": {
     "eyebrow": "Fiabilité",
     "titleLine1": "Conçu pour fonctionner",
-    "titleLine2": "là où l'école se trouve.",
-    "description": "Do est pensé autour d'une contrainte majeure : une connectivité sur laquelle on ne peut pas compter. Contenu, cours et sondages se synchronisent dès le retour de la connexion, pour qu'un signal faible ne sépare jamais un élève de sa classe.",
+    "titleLine2": "là où l'apprentissage a lieu.",
+    "description": "Do est pensé autour d'une contrainte majeure : une connectivité sur laquelle on ne peut pas compter. Contenu, cours et sondages se synchronisent dès le retour de la connexion, pour qu'un signal faible ne sépare jamais un apprenant de son programme.",
     "stats": {
       "offline": "Hors ligne",
       "offlineSub": "D'abord, pas après coup",
@@ -98,7 +98,7 @@
     "syncStatus": "État de la synchro",
     "syncing": "Synchronisation normale",
     "syncItems": [
-      { "feature": "Annonces", "detail": "École & mises à jour de classe", "status": "Hors ligne prêt", "offlineReady": true },
+      { "feature": "Annonces", "detail": "Programme & mises à jour de cohorte", "status": "Hors ligne prêt", "offlineReady": true },
       { "feature": "Contenu de cours", "detail": "Docs, audio, vidéo", "status": "Hors ligne prêt", "offlineReady": true },
       { "feature": "Sondages", "detail": "Vérifications de compréhension", "status": "Hors ligne prêt", "offlineReady": true },
       { "feature": "Appels du tuteur IA", "detail": "Sessions d'avatar en direct", "status": "Nécessite une connexion", "offlineReady": false }
@@ -111,7 +111,7 @@
     "note": "Des objectifs de feuille de route, pas des données en direct — nous en sommes au début, et nous préférons être honnêtes plutôt que de faire croire que nous en sommes plus loin.",
     "items": [
       { "value": 2, "suffix": "", "prefix": "", "label": "Langues au lancement — anglais & français" },
-      { "value": 400, "suffix": "+", "prefix": "", "label": "Écoles visées d'ici l'année 5" },
+      { "value": 400, "suffix": "+", "prefix": "", "label": "Institutions et programmes de formation visés d'ici l'année 5" },
       { "value": 3, "suffix": "s", "prefix": "<", "label": "Temps de réponse cible du tuteur IA par tour" },
       { "value": 0, "suffix": "", "prefix": "", "label": "Groupes WhatsApp nécessaires une fois sur Do" }
     ]
@@ -119,7 +119,7 @@
   "integration": {
     "eyebrow": "Intégrations",
     "titleLine1": "Fonctionne avec ce que",
-    "titleLine2": "votre école utilise déjà.",
+    "titleLine2": "votre institution utilise déjà.",
     "description": "Connectez-vous avec Google ou Microsoft. Payez par mobile money, carte ou facture. Aucun nouveau compte à gérer.",
     "note": "Intégrations prévues - pas encore toutes disponibles.",
     "items": [
@@ -145,47 +145,47 @@
     "certifications": ["SOC 2 Type II", "ISO 27001", "Conforme RGPD"]
   },
   "developer": {
-    "eyebrow": "Pour l'IT scolaire & les administrateurs",
+    "eyebrow": "Pour l'IT institutionnel & les administrateurs",
     "titleLine1": "Conçu pour les questions",
     "titleLine2": "difficiles.",
-    "description": "Avant qu'une école s'engage, quelqu'un demande à juste titre la propriété des données, le consentement et la sécurité. Voici ce que nous pouvons vous dire aujourd'hui — simplement, pas dans un pitch commercial.",
+    "description": "Avant qu'une institution s'engage, quelqu'un demande à juste titre la propriété des données, le consentement et la sécurité. Voici ce que nous pouvons vous dire aujourd'hui — simplement, pas dans un pitch commercial.",
     "points": {
       "data": { "title": "Vos données vous appartiennent", "description": "Export complet à tout moment. Aucun verrouillage." },
       "consent": { "title": "IA avec consentement journalisé", "description": "Chaque interaction avec l'avatar est divulguée et enregistrée." },
       "transit": { "title": "Chiffré en transit", "description": "TLS partout, accès basé sur les rôles." },
-      "scale": { "title": "Conçu pour l'échelle", "description": "Données isolées entre les écoles, par conception." }
+      "scale": { "title": "Conçu pour l'échelle", "description": "Données isolées entre les institutions, par conception." }
     },
     "topics": {
-      "ownership": { "label": "Propriété des données", "content": "Les données de votre école appartiennent à votre école.\n\n- Export complet disponible à tout moment, en formats standards\n- Aucun verrouillage : quitter Do signifie repartir avec vos données\n- Les données supprimées sont vraiment supprimées, pas seulement cachées" },
-      "consent": { "label": "Consentement & IA", "content": "Chaque interaction avec l'avatar IA est divulguée et journalisée.\n\n- Les enseignants optent explicitement avant toute création d'avatar ou de voix\n- Les élèves sont informés qu'ils parlent à une IA, à chaque session\n- Transcriptions complètes disponibles pour l'enseignant et l'admin" },
-      "security": { "label": "Sécurité", "content": "Conçu avec des protections standard dès le départ, pas ajoutées ensuite.\n\n- Chiffrement TLS en transit\n- Contrôle d'accès basé sur les rôles par école (admin/enseignant/élève)\n- Isolation des données par école dans un environnement multi-locataire" }
+      "ownership": { "label": "Propriété des données", "content": "Les données de votre institution appartiennent à votre institution.\n\n- Export complet disponible à tout moment, en formats standards\n- Aucun verrouillage : quitter Do signifie repartir avec vos données\n- Les données supprimées sont vraiment supprimées, pas seulement cachées" },
+      "consent": { "label": "Consentement & IA", "content": "Chaque interaction avec l'avatar IA est divulguée et journalisée.\n\n- Les formateurs optent explicitement avant toute création d'avatar ou de voix\n- Les apprenants sont informés qu'ils parlent à une IA, à chaque session\n- Transcriptions complètes disponibles pour le formateur et l'admin" },
+      "security": { "label": "Sécurité", "content": "Conçu avec des protections standard dès le départ, pas ajoutées ensuite.\n\n- Chiffrement TLS en transit\n- Contrôle d'accès basé sur les rôles par institution (admin/formateur/apprenant)\n- Isolation des données par institution dans un environnement multi-locataire" }
     },
     "readSecurity": "Lire notre vue d'ensemble sécurité",
     "requestDpa": "Demander un accord de traitement des données"
   },
   "testimonial": {
     "label": "Pourquoi nous construisons ça",
-    "founderQuote": "J'ai créé Do parce que j'ai vu des écoles se noyer dans les groupes WhatsApp. Messages importants perdus, aucune structure, rien qui fonctionne quand la connexion tombe. Je voulais quelque chose qui correspond vraiment au fonctionnement des écoles, pas une autre appli de chat.",
+    "founderQuote": "J'ai créé Do parce que j'ai vu des institutions lutter avec une communication dispersée, un suivi insuffisant et un apprentissage perturbé quand la connexion tombait. Je voulais quelque chose qui corresponde vraiment au fonctionnement des programmes de formation et des organisations d'apprentissage, pas une autre appli de chat.",
     "founderAuthor": "Ermon Gabriel",
     "founderRole": "Fondateur, Do",
     "valuesLabel": "Ce que Do défend",
     "whereTitle": "Où nous en sommes",
-    "whereBody": "Tôt. Construit au grand jour. À la recherche de nos premières écoles pilotes.",
+    "whereBody": "Tôt. Construit au grand jour. À la recherche de nos premiers pilotes institutionnels et programmes de formation.",
     "joinWaitlist": "Rejoindre la liste d'attente →",
     "values": [
       "Hors ligne d'abord",
       "IA avec consentement d'abord",
       "Bilingue — EN / FR",
-      "Conçu pour les écoles CEMAC",
+      "Conçu pour les institutions et organisations de formation",
       "Structuré, pas chaotique",
-      "Ancré dans le propre matériel de l'enseignant"
+      "Ancré dans le propre matériel de l'équipe"
     ]
   },
   "pricing": {
     "eyebrow": "Tarifs",
     "titleLine1": "Simple, transparent",
     "titleLine2": "tarifs",
-    "description": "Commencez gratuitement pour une seule classe. Passez à l'échelle supérieure quand vous êtes prêt pour le Tuteur IA Avatar.",
+    "description": "Choisissez un forfait adapté à votre institution, centre de formation ou organisation de formation en croissance.",
     "monthly": "Mensuel",
     "annual": "Annuel",
     "billingToggle": "Activer ou désactiver la facturation annuelle",
@@ -194,10 +194,10 @@
     "mostPopular": "Le plus populaire",
     "perMonth": "/mois",
     "audience": {
-      "free": "Idéal pour une classe",
-      "basic": "Idéal pour une petite école",
-      "standard": "Idéal pour les écoles pilotes",
-      "premium": "Idéal pour districts & groupes"
+      "free": "Idéal pour un petit pilote ou une cohorte de formation",
+      "basic": "Idéal pour une école de formation ou institution en croissance",
+      "standard": "Idéal pour les institutions multi-sites avec de grandes cohortes",
+      "premium": "Idéal pour les académies, réseaux et programmes de formation d'entreprise"
     },
     "noteAll": "Tous les forfaits incluent la synchro hors ligne, le chiffrement TLS et le contrôle d'accès basé sur les rôles.",
     "compareFeatures": "Comparer toutes les fonctionnalités",
@@ -205,42 +205,42 @@
     "plans": [
       {
         "name": "Gratuit",
-        "description": "Une seule classe ou une très petite école",
+        "description": "Un petit pilote ou un groupe d'apprentissage en début de parcours",
         "priceXaf": { "monthly": 0, "annual": 0 },
-        "features": ["Jusqu'à 20 élèves", "Annonces & contenu", "Synchro hors ligne", "Sondages & retours instantanés", "Aucune minute d'avatar IA"],
+        "features": ["Jusqu'à 20 élèves", "Annonces & contenu", "Synchro hors ligne", "Sondages & retours instantanés", "Aucune fonctionnalité IA"],
         "cta": "Commencez gratuitement",
         "popular": false
       },
       {
         "name": "Basique",
-        "description": "Remplacez le chaos WhatsApp à toute l'école",
+        "description": "Une institution ou un centre de formation en croissance",
         "priceXaf": { "monthly": 20000, "annual": 16700 },
-        "features": ["Élèves & enseignants illimités", "Synchro hors ligne", "Sondages & retours instantanés", "Résumé de contenu par IA", "Aucune minute d'avatar IA"],
+        "features": ["Jusqu'à 500 élèves", "Synchro hors ligne", "Sondages & retours instantanés", "Résumé de contenu par IA", "Aucune minute d'avatar IA"],
         "cta": "Rejoindre la liste",
         "popular": false
       },
       {
         "name": "Standard",
-        "description": "Prêt à piloter le Tuteur IA Avatar",
+        "description": "Une organisation plus grande avec un déploiement étendu",
         "priceXaf": { "monthly": 85000, "annual": 70800 },
-        "features": ["Tout du Basique", "300 minutes d'avatar IA / mois", "Recherche sémantique dans le contenu", "Analytiques de compréhension de classe", "Réserve de minutes partagée, école entière"],
+        "features": ["Jusqu'à 5 000 élèves", "Tout du Basique", "Aucune fonctionnalité IA", "Recherche sémantique dans le contenu", "Espace de communication partagé"],
         "cta": "Rejoindre la liste",
         "popular": true
       },
       {
         "name": "Premium",
-        "description": "Grandes institutions, usage intensif d'avatar",
+        "description": "Programmes multi-sites et usages à fort volume",
         "priceXaf": { "monthly": 200000, "annual": 166700 },
-        "features": ["Tout du Standard", "1 000 minutes d'avatar IA / mois", "Sessions de \"consultation\" de groupe", "Support prioritaire", "Report des minutes (offres annuelles)"],
+        "features": ["Élèves illimités", "Tout du Standard", "Accès au tuteur IA sur le web", "Support prioritaire", "Outils d'administration avancés"],
         "cta": "Parlez-nous",
         "popular": false
       }
     ]
   },
   "cta": {
-    "titleLine1": "Prêt pour un groupe",
-    "titleLine2": "WhatsApp en moins ?",
-    "description": "Rejoignez la liste d'attente et faites partie des premières écoles à essayer Do - une communication structurée, hors ligne d'abord, avec un tuteur IA basé sur le contenu de vos enseignants.",
+    "titleLine1": "Prêt pour un outil",
+    "titleLine2": "à gérer de moins ?",
+    "description": "Rejoignez la liste d'attente et faites partie des premières institutions, centres de formation et organisations de formation à essayer Do — une communication structurée, hors ligne d'abord, avec un tuteur IA basé sur votre propre contenu.",
     "primary": "Rejoindre la liste",
     "secondary": "Parlez-nous",
     "note": "Aucune carte bancaire requise",
@@ -256,24 +256,24 @@
   "about": {
     "eyebrow": "À propos de Do",
     "titleLine1": "Nous remplaçons",
-    "titleLine2": "WhatsApp par l'école.",
-    "intro": "Do offre à chaque école un espace structuré pour la communication — contenu, sondages et un tuteur IA basé sur le consentement pour chaque enseignant. Conçu hors ligne d'abord pour les salles de classe qui en ont le plus besoin.",
-    "missionTitle": "Pourquoi nous existons",
-    "mission": "Les écoles d'Afrique centrale perdent des messages importants dans les chats de groupe, manquent de structure, et s'éteignent dès que la connexion tombe. Nous construisons l'alternative calme et fiable — pensée pour le fonctionnement réel des écoles.",
-    "valuesTitle": "Ce que nous défendons",
-    "stats": [
-      { "value": "CEMAC", "label": "Conçu pour les écoles de la région" },
-      { "value": "EN / FR", "label": "Bilingue dès le départ" },
-      { "value": "Hors ligne", "label": "D'abord, pas après coup" },
-      { "value": "Consentement", "label": "IA d'abord, toujours divulguée" }
-    ],
-    "teamTitle": "Construit au grand jour",
-    "teamBody": "Nous sommes jeunes et peu nombreux, nous publions en public et cherchons nos premières écoles pilotes. Si c'est votre cas, nous serions ravis d'échanger.",
-    "founderEyebrow": "Fondateur",
-    "founderName": "Ermon Gabriel",
-    "founderRole": "Fondateur & CEO, Do",
-    "founderQuote": "J'ai créé Do parce que j'ai vu des écoles se noyer dans les groupes WhatsApp. Messages importants perdus, aucune structure, rien qui fonctionne quand la connexion tombe. Je voulais quelque chose qui correspond vraiment au fonctionnement des écoles, pas une autre appli de chat.",
-    "founderBio": "Ermon a passé des années dans les salles de classe et l'organisation scolaire au Cameroun et dans la région CEMAC avant de lancer Do. Il se soucie des choses peu glamour — synchro hors ligne, consentement, et données qui vous appartiennent — car c'est ce qui rend un outil assez fiable pour une école.",
+    "titleLine2": "le chaos par la structure.",
+    "intro": "Do offre à chaque institution un espace structuré pour la communication — contenu, sondages et un tuteur IA basé sur le consentement pour chaque formateur ou enseignant. Conçu hors ligne d'abord pour les environnements d'apprentissage qui en ont le plus besoin.",
+      "missionTitle": "Pourquoi nous existons",
+      "mission": "Les institutions d'Afrique centrale perdent des messages importants dans les chats de groupe, manquent de structure, et s'éteignent dès que la connexion tombe. Nous construisons l'alternative calme et fiable — pensée pour le fonctionnement réel des programmes de formation et organisations d'apprentissage.",
+      "valuesTitle": "Ce que nous défendons",
+      "stats": [
+        { "value": "CEMAC", "label": "Conçu pour les institutions de la région" },
+        { "value": "EN / FR", "label": "Bilingue dès le départ" },
+        { "value": "Hors ligne", "label": "D'abord, pas après coup" },
+        { "value": "Consentement", "label": "IA d'abord, toujours divulguée" }
+      ],
+      "teamTitle": "Construit au grand jour",
+      "teamBody": "Nous sommes jeunes et peu nombreux, nous publions en public et cherchons nos premières institutions pilotes. Si c'est votre cas, nous serions ravis d'échanger.",
+      "founderEyebrow": "Fondateur",
+      "founderName": "Ermon Gabriel",
+      "founderRole": "Fondateur & CEO, Do",
+      "founderQuote": "J'ai créé Do parce que j'ai vu des institutions se noyer dans les groupes WhatsApp. Messages importants perdus, aucune structure, rien qui fonctionne quand la connexion tombe. Je voulais quelque chose qui correspond vraiment au fonctionnement des programmes de formation et organisations d'apprentissage, pas une autre appli de chat.",
+      "founderBio": "Ermon a passé des années dans les salles de classe et l'organisation d'institutions au Cameroun et dans la région CEMAC avant de lancer Do. Il se soucie des choses peu glamour — synchro hors ligne, consentement, et données qui vous appartiennent — car c'est ce qui rend un outil assez fiable pour une institution.",
     "founderSocial": [
       { "name": "X / Twitter", "href": "https://x.com/ermongabriel_" },
       { "name": "LinkedIn", "href": "https://www.linkedin.com/in/elate-ekoa-ermon-gabriel/" },
@@ -283,12 +283,12 @@
   "contact": {
     "eyebrow": "Contact",
     "titleLine1": "Parlons de",
-    "titleLine2": "votre école.",
+    "titleLine2": "votre institution.",
     "intro": "Pilotes, partenariats, presse, ou simplement une question — contactez l'équipe et nous vous répondrons.",
     "emailLabel": "Email",
-    "emailPlaceholder": "vous@ecole.edu",
+    "emailPlaceholder": "vous@institution.org",
     "messageLabel": "Message",
-    "messagePlaceholder": "Parlez-nous de votre école et de ce que vous espérez…",
+    "messagePlaceholder": "Parlez-nous de votre institution et de ce que vous espérez…",
     "submit": "Envoyer le message",
     "note": "Pas de spam. Nous répondons à chaque message sérieux.",
     "directTitle": "Autres moyens de nous joindre",
@@ -299,66 +299,66 @@
   "aiTutor": {
     "eyebrow": "Tuteur IA",
     "titleLine1": "Un tuteur IA",
-    "titleLine2": "ancré dans votre enseignant.",
-    "intro": "Chaque enseignant peut créer un tuteur IA basé sur son consentement — construit uniquement à partir de son propre cours. Les élèves ont toujours quelqu'un à qui demander, même quand la connexion tombe.",
+    "titleLine2": "ancré dans votre formateur.",
+    "intro": "Chaque formateur peut créer un tuteur IA basé sur son consentement — construit uniquement à partir de son propre cours. Les apprenants ont toujours quelqu'un à qui demander, même quand la connexion tombe.",
     "howTitle": "Comment ça marche",
     "steps": [
-      { "number": "I", "title": "Consentement d'abord", "description": "Les enseignants optent explicitement avant toute création d'avatar ou de voix. Rien n'est généré sans un oui clair." },
-      { "number": "II", "title": "Ancré dans votre matériel", "description": "Le tuteur est construit uniquement à partir du contenu que l'enseignant téléverse — jamais depuis internet, donc les réponses restent pertinentes et fiables." },
-      { "number": "III", "title": "Toujours divulgué", "description": "Les élèves sont informés, à chaque session, qu'ils parlent à une IA. Aucune impersonnation humaine." }
+      { "number": "I", "title": "Consentement d'abord", "description": "Les formateurs optent explicitement avant toute création d'avatar ou de voix. Rien n'est généré sans un oui clair." },
+      { "number": "II", "title": "Ancré dans votre matériel", "description": "Le tuteur est construit uniquement à partir du contenu que le formateur téléverse — jamais depuis internet, donc les réponses restent pertinentes et fiables." },
+      { "number": "III", "title": "Toujours divulgué", "description": "Les apprenants sont informés, à chaque session, qu'ils parlent à une IA. Aucune impersonnation humaine." }
     ],
     "safetyTitle": "Sûr, par conception",
     "safety": [
-      { "title": "Journalisé avec consentement", "description": "Chaque interaction avec l'avatar est divulguée et enregistrée, avec des transcriptions disponibles pour les enseignants et admins." },
-      { "title": "Uniquement sur le sujet", "description": "Le tuteur ne répond qu'à partir du matériel de l'enseignant — pas de réponses hors sujet, pas de dérive web." },
-      { "title": "Accès basé sur les rôles", "description": "Les enseignants contrôlent leur avatar et leur voix. Les écoles restent isolées les unes des autres." }
+      { "title": "Journalisé avec consentement", "description": "Chaque interaction avec l'avatar est divulguée et enregistrée, avec des transcriptions disponibles pour les formateurs et admins." },
+      { "title": "Uniquement sur le sujet", "description": "Le tuteur ne répond qu'à partir du matériel du formateur — pas de réponses hors sujet, pas de dérive web." },
+      { "title": "Accès basé sur les rôles", "description": "Les formateurs contrôlent leur avatar et leur voix. Les institutions restent isolées les unes des autres." }
     ],
-    "ctaTitle": "Amenez le tuteur IA dans votre école",
-    "ctaBody": "Rejoignez la liste d'attente et faites partie des premières écoles à piloter un tuteur qui correspond vraiment à vos salles de classe."
+    "ctaTitle": "Amenez le tuteur IA dans votre institution",
+    "ctaBody": "Rejoignez la liste d'attente et faites partie des premières institutions à piloter un tuteur qui correspond vraiment à vos programmes."
   },
   "legal": {
     "privacy": {
-      "title": "Politique de confidentialité",
-      "intro": "Cette politique explique ce que nous collectons, pourquoi, et les choix qui vous appartiennent. Do est conçu pour les écoles, aussi nous traitons les données des élèves avec une attention particulière.",
-      "updated": "Dernière mise à jour : juillet 2026",
-      "dataTitle": "Ce que nous collectons",
-      "dataBody": "Nous collectons les informations de compte (email, rôle, école), le contenu de cours que vous téléversez, et les interactions avec le tuteur IA consenties. Nous ne vendons aucune donnée personnelle.",
-      "useTitle": "Comment nous les utilisons",
-      "useBody": "Pour assurer la synchro hors ligne, faire fonctionner le tuteur IA auquel vous consentez, et maintenir l'espace de travail de votre école. Tout est limité à votre école.",
-      "rightsTitle": "Vos droits",
-      "rightsBody": "Votre école possède ses données et peut les exporter ou les supprimer à tout moment. Les élèves et parents sont informés quand ils parlent à une IA, à chaque session.",
+        "title": "Politique de confidentialité",
+        "intro": "Cette politique explique ce que nous collectons, pourquoi, et les choix qui vous appartiennent. Do est conçu pour les institutions, aussi nous traitons les données des apprenants avec une attention particulière.",
+        "updated": "Dernière mise à jour : juillet 2026",
+        "dataTitle": "Ce que nous collectons",
+        "dataBody": "Nous collectons les informations de compte (email, rôle, institution), le contenu de cours que vous téléversez, et les interactions avec le tuteur IA consenties. Nous ne vendons aucune donnée personnelle.",
+        "useTitle": "Comment nous les utilisons",
+        "useBody": "Pour assurer la synchro hors ligne, faire fonctionner le tuteur IA auquel vous consentez, et maintenir l'espace de travail de votre institution. Tout est limité à votre institution.",
+        "rightsTitle": "Vos droits",
+        "rightsBody": "Votre institution possède ses données et peut les exporter ou les supprimer à tout moment. Les apprenants et parents sont informés quand ils parlent à une IA, à chaque session.",
       "contactTitle": "Contact",
       "contactBody": "Des questions sur vos données ? Écrivez à privacy@do.app et nous répondrons sous 30 jours."
     },
     "terms": {
-      "title": "Conditions d'utilisation",
-      "intro": "Ces conditions régissent votre usage de Do. En utilisant le produit, vous les acceptez. Elles sont volontairement rédigées en langage clair.",
-      "updated": "Dernière mise à jour : juillet 2026",
-      "useTitle": "Usage acceptable",
-      "useBody": "Utilisez Do pour une communication scolaire légitime. Ne détournez pas les données d'autrui, ne téléversez pas de contenu illicite, et ne contournez pas les contrôles de sécurité.",
-      "accountsTitle": "Comptes et rôles",
-      "accountsBody": "L'accès est basé sur les rôles : admins, admins école, personnel, enseignants, élèves et parents ne voient chacun que ce que leur rôle permet.",
-      "liabilityTitle": "Disponibilité",
-      "liabilityBody": "Do est en développement actif. Nous visons la fiabilité mais ne garantissons aucun niveau de disponibilité tant que le produit est jeune.",
-      "changesTitle": "Changements",
-      "changesBody": "Nous pouvons mettre à jour ces conditions et en informerons les écoles avant tout changement important."
+        "title": "Conditions d'utilisation",
+        "intro": "Ces conditions régissent votre usage de Do. En utilisant le produit, vous les acceptez. Elles sont volontairement rédigées en langage clair.",
+        "updated": "Dernière mise à jour : juillet 2026",
+        "useTitle": "Usage acceptable",
+        "useBody": "Utilisez Do pour une communication institutionnelle légitime. Ne détournez pas les données d'autrui, ne téléversez pas de contenu illicite, et ne contournez pas les contrôles de sécurité.",
+        "accountsTitle": "Comptes et rôles",
+        "accountsBody": "L'accès est basé sur les rôles : admins, admins institution, personnel, formateurs, apprenants et parents ne voient chacun que ce que leur rôle permet.",
+        "liabilityTitle": "Disponibilité",
+        "liabilityBody": "Do est en développement actif. Nous visons la fiabilité mais ne garantissons aucun niveau de disponibilité tant que le produit est jeune.",
+        "changesTitle": "Changements",
+        "changesBody": "Nous pouvons mettre à jour ces conditions et en informerons les institutions avant tout changement important."
     },
     "security": {
-      "title": "Sécurité & Confiance",
-      "intro": "La confiance n'est pas une fonction que nous ajoutons plus tard. Voici comment Do est conçu pour protéger les données scolaires dès le départ.",
-      "updated": "Dernière mise à jour : juillet 2026",
-      "encryptTitle": "Chiffrement",
-      "encryptBody": "Les données sont chiffrées en transit (TLS 1.3) et au repos (AES-256). Chaque requête est authentifiée et autorisée.",
-      "consentTitle": "IA avec consentement d'abord",
-      "consentBody": "Chaque interaction avec le tuteur IA est divulguée et journalisée. Les enseignants optent explicitement avant toute création d'avatar ou de voix ; les élèves sont informés qu'ils parlent à une IA.",
-      "isolationTitle": "Isolation des données",
-      "isolationBody": "Les écoles sont isolées les unes des autres par conception dans un environnement multi-locataire, avec contrôle d'accès basé sur les rôles (admin / enseignant / élève).",
+        "title": "Sécurité & Confiance",
+        "intro": "La confiance n'est pas une fonction que nous ajoutons plus tard. Voici comment Do est conçu pour protéger les données institutionnelles dès le départ.",
+        "updated": "Dernière mise à jour : juillet 2026",
+        "encryptTitle": "Chiffrement",
+        "encryptBody": "Les données sont chiffrées en transit (TLS 1.3) et au repos (AES-256). Chaque requête est authentifiée et autorisée.",
+        "consentTitle": "IA avec consentement d'abord",
+        "consentBody": "Chaque interaction avec le tuteur IA est divulguée et journalisée. Les formateurs optent explicitement avant toute création d'avatar ou de voix ; les apprenants sont informés qu'ils parlent à une IA.",
+        "isolationTitle": "Isolation des données",
+        "isolationBody": "Les institutions sont isolées les unes des autres par conception dans un environnement multi-locataire, avec contrôle d'accès basé sur les rôles (admin / formateur / apprenant).",
       "certTitle": "Normes",
       "certBody": "Nous visons les pratiques SOC 2 Type II, ISO 27001, RGPD et alignées HIPAA à mesure que le produit mûrit."
     }
   },
   "footer": {
-    "description": "Communication scolaire structurée et un tuteur IA pour chaque enseignant — conçu hors ligne d'abord, en anglais et en français.",
+    "description": "Communication institutionnelle structurée et un tuteur IA pour chaque formateur — conçu hors ligne d'abord, en anglais et en français.",
     "colProduct": "Produit",
     "colCompany": "Entreprise",
     "colLegal": "Légal",
@@ -397,13 +397,13 @@
     "pageTitle": "Rejoindre la liste d'attente — Do",
     "eyebrow": "Accès anticipé",
     "title": "Rejoignez la liste d'attente",
-    "description": "Soyez parmi les premières écoles à essayer Do. Pas de spam, pas de bruit — juste un message quand c'est votre tour.",
+    "description": "Soyez parmi les premières institutions à essayer Do. Pas de spam, pas de bruit — juste un message quand c'est votre tour.",
     "firstNameLabel": "Prénom",
     "firstNamePlaceholder": "Ama",
     "lastNameLabel": "Nom",
     "lastNamePlaceholder": "Ngah",
-    "schoolLabel": "École / Établissement",
-    "schoolPlaceholder": "ex. Lycée Bilingue de Yaoundé",
+    "schoolLabel": "Institution",
+    "schoolPlaceholder": "ex. Institut de Formation de Yaoundé",
     "emailLabel": "Adresse email",
     "emailPlaceholder": "vous@ecole.edu",
     "submit": "Rejoindre la liste",

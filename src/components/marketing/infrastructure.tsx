@@ -7,7 +7,7 @@ import { useLocale } from "@/locale";
 // real product behavior, not a marketing stat. Keep this list accurate
 // as the actual sync capabilities evolve.
 const syncItems = [
-  { feature: "Announcements", detail: "School & class updates", status: "Offline-ready", offlineReady: true },
+  { feature: "Announcements", detail: "Program & cohort updates", status: "Offline-ready", offlineReady: true },
   { feature: "Class Content", detail: "Docs, audio, video", status: "Offline-ready", offlineReady: true },
   { feature: "Polls", detail: "Comprehension checks", status: "Offline-ready", offlineReady: true },
   { feature: "AI Tutor Calls", detail: "Live avatar sessions", status: "Requires connection", offlineReady: false },

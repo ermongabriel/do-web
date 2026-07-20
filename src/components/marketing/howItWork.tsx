@@ -12,22 +12,22 @@ import { shadowButton } from "@/lib/utils";
 const steps = [
   {
     number: "I",
-    title: "Set up your school",
-    description: "Create your school's workspace and invite teachers and students. No technical setup, no IT department required.",
+    title: "Set up your institution",
+    description: "Create your institution's workspace and invite staff, trainers, and learners. No technical setup, no IT department required.",
     illustration: "setup",
     videoSrc: "", // e.g. "/videos/step-1-setup.mp4"
   },
   {
     number: "II",
-    title: "Teachers share & build their AI tutor",
-    description: "Upload class content and, if you choose, record a consent-based AI tutor grounded only in your own material.",
+    title: "Trainers share & build their AI tutor",
+    description: "Upload course content and, if you choose, build a consent-based AI tutor grounded only in your own material.",
     illustration: "tutor",
     videoSrc: "", // e.g. "/videos/step-2-tutor.mp4"
   },
   {
     number: "III",
-    title: "Students learn, anytime",
-    description: "Content and polls sync automatically, even offline. Students can ask the AI tutor a question whenever they need to.",
+    title: "Learners learn, anytime",
+    description: "Content and polls sync automatically, even offline. Learners can ask the AI tutor a question whenever they need to.",
     illustration: "sync",
     videoSrc: "", // e.g. "/videos/step-3-sync.mp4"
   },
