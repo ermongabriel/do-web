@@ -106,11 +106,11 @@ const Navbar = () => {
           }`}
         >
           {/* Logo */}
-          <a href="#" className="flex items-center gap-2 group shrink-0">
+          <a href="/" className="flex items-center gap-2 group shrink-0">
             {showImageLogo ? (
               <img
                 src={LOGO_IMAGE_SRC}
-                alt="Do"
+                alt="DO"
                 onError={() => setLogoImageFailed(true)}
                 className="w-auto max-w-[140px] h-9 transition-all duration-500"
               />

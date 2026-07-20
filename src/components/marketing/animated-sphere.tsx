@@ -93,7 +93,7 @@ export function AnimatedSphere() {
       try {
         if (mq.addEventListener) mq.addEventListener("change", mqListener)
         else if ((mq as any).addListener) (mq as any).addListener(mqListener)
-      } catch (e) {
+      } catch (_e) {
         /* ignore */
       }
     }
@@ -194,7 +194,7 @@ export function AnimatedSphere() {
         try {
           if (mq.removeEventListener) mq.removeEventListener("change", mqListener)
           else if ((mq as any).removeListener) (mq as any).removeListener(mqListener)
-        } catch (e) {
+        } catch (_e) {
           /* ignore */
         }
       }
