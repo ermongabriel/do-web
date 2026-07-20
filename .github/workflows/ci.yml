@@ -7,24 +7,38 @@ on:
     branches: [main]
 
 jobs:
-  build:
+  lint-and-test:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
+    
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: '20'
           cache: 'npm'
 
       - name: Install dependencies
-        run: npm install
+        run: npm i
 
       - name: Lint
-        run: npm run lint
+        run: npm run lint -- --max-warnings=0
+        continue-on-error: false
+
+      - name: Format check
+        run: npx prettier --check "**/*.{ts,tsx,json,md}"
+        continue-on-error: true
 
       - name: Type check
         run: npm run typecheck
 
       - name: Build
         run: npm run build
+
+      - name: Build artifact size check
+        run: |
+          SIZE=$(du -sh dist/ | cut -f1)
+          echo "Build size: $SIZE"
