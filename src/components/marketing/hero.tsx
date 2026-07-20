@@ -8,7 +8,6 @@ import { Link } from "react-router-dom"
 import { shadowButton } from "@/lib/utils"
 
 const Hero = () => {
-  const [isVisible, setIsVisible] = useState(true)
   const [wordIndex, setWordIndex] = useState(0)
   const { t } = useLocale()
   const words = [
@@ -19,15 +18,11 @@ const Hero = () => {
   ]
 
   useEffect(() => {
-    setIsVisible(true)
-  }, [])
-
-  useEffect(() => {
     const interval = setInterval(() => {
       setWordIndex((prev) => (prev + 1) % words.length)
     }, 2500)
     return () => clearInterval(interval)
-  }, [])
+  }, [words.length])
 
   return (
     <section className="relative flex min-h-screen flex-col justify-center overflow-hidden">
@@ -70,9 +65,7 @@ const Hero = () => {
       >
         {/* Eyebrow */}
         <div
-          className={`mb-6 transition-all duration-700 md:mb-8 ${
-            isVisible ? "translate-y-0 opacity-100" : "translate-y-4 opacity-0"
-          }`}
+          className="mb-6 transition-all duration-700 md:mb-8 translate-y-0 opacity-100"
         >
           <span className="inline-flex items-center gap-3 font-mono text-sm text-muted-foreground">
             <span className="h-px w-8 bg-foreground/30" />
@@ -83,11 +76,7 @@ const Hero = () => {
         {/* Main headline */}
         <div className="mb-10 md:mb-12">
           <h1
-            className={`font-display text-[clamp(3rem,12vw,10rem)] leading-[0.9] tracking-tight transition-all duration-1000 ${
-              isVisible
-                ? "translate-y-0 opacity-100"
-                : "translate-y-8 opacity-0"
-            } text-center lg:text-left`}
+            className={`font-display text-[clamp(3rem,12vw,10rem)] leading-[0.9] tracking-tight transition-all duration-1000 translate-y-0 opacity-100 text-center lg:text-left`}
           >
             <span className="block">{t("hero.titlePart1")}</span>
             <span className="block">
@@ -115,22 +104,14 @@ const Hero = () => {
         {/* Description */}
         <div className="grid grid-cols-1 items-start gap-10 lg:grid-cols-2 lg:gap-24">
           <p
-            className={`text-base leading-relaxed text-muted-foreground transition-all delay-200 duration-700 md:text-lg lg:text-xl ${
-              isVisible
-                ? "translate-y-0 opacity-100"
-                : "translate-y-4 opacity-0"
-            } mx-auto max-w-none text-center lg:mx-0 lg:max-w-xl lg:text-left`}
+            className={`text-base leading-relaxed text-muted-foreground transition-all delay-200 duration-700 md:text-lg lg:text-xl translate-y-0 opacity-100 mx-auto max-w-none text-center lg:mx-0 lg:max-w-xl lg:text-left`}
           >
             {t("hero.description")}
           </p>
 
           {/* CTAs */}
           <div
-            className={`flex flex-col items-center justify-center gap-4 transition-all delay-300 duration-700 sm:flex-row sm:items-start sm:justify-start ${
-              isVisible
-                ? "translate-y-0 opacity-100"
-                : "translate-y-4 opacity-0"
-            }`}
+            className={`flex flex-col items-center justify-center gap-4 transition-all delay-300 duration-700 sm:flex-row sm:items-start sm:justify-start translate-y-0 opacity-100`}
           >
             <Link to="/auth/waitlist">
                 <Button
@@ -159,7 +140,7 @@ const Hero = () => {
           students reached, uptime) once you have them, then uncomment. */}
       {/* <div 
         className={`absolute bottom-15 left-0 right-0 transition-all duration-700 delay-500 ${
-          isVisible ? "opacity-100" : "opacity-0"
+          true ? "opacity-100" : "opacity-0"
         }`}
       >
         <div className="flex gap-16 marquee whitespace-nowrap">

@@ -15,6 +15,7 @@ type TranslationValue =
   | null
   | TranslationValue[]
   | { [key: string]: TranslationValue };
+type TranslationObject = { [key: string]: TranslationValue };
 const DEFAULT_LOCALE: LocaleCode = "en";
 
 const getSavedLocale = (): LocaleCode | null => {
@@ -41,16 +42,17 @@ const LocaleContext = createContext<{
 }>({
   locale: DEFAULT_LOCALE,
   setLocale: () => {},
-  t: (key, fallback) => (fallback ?? key) as any,
+  t: <T extends TranslationValue = string>(key: string, fallback?: T): T =>
+    (fallback ?? key) as T,
 });
 
-const resolveKey = (obj: Record<string, any>, key: string): TranslationValue | undefined => {
+const resolveKey = (obj: TranslationObject, key: string): TranslationValue | undefined => {
   return key.split(".").reduce<TranslationValue | undefined>((current, part) => {
     if (current && typeof current === "object" && part in current) {
-      return (current as any)[part];
+      return (current as TranslationObject)[part];
     }
     return undefined;
-  }, obj as any);
+  }, obj as TranslationValue | undefined);
 };
 
 export const LocaleProvider = ({ children }: { children: React.ReactNode }) => {

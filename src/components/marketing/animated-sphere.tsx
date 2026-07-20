@@ -50,7 +50,10 @@ export function AnimatedSphere() {
       return 0.2126 * lin[0] + 0.7152 * lin[1] + 0.0722 * lin[2]
     }
 
-    const mq = typeof window !== "undefined" && (window.matchMedia ? window.matchMedia("(prefers-color-scheme: dark)") : null)
+    const mq: MediaQueryList | null =
+      typeof window !== "undefined" && window.matchMedia
+        ? window.matchMedia("(prefers-color-scheme: dark)")
+        : null
 
     const updateFillFromBg = () => {
       const bg = findNearestBackground(canvas.parentElement).trim()
@@ -92,7 +95,8 @@ export function AnimatedSphere() {
     if (mq) {
       try {
         if (mq.addEventListener) mq.addEventListener("change", mqListener)
-        else if ((mq as any).addListener) (mq as any).addListener(mqListener)
+        else if ((mq as MediaQueryList & { addListener?: (cb: () => void) => void }).addListener)
+          (mq as MediaQueryList & { addListener: (cb: () => void) => void }).addListener(mqListener)
       } catch (_e) {
         /* ignore */
       }
@@ -193,7 +197,8 @@ export function AnimatedSphere() {
       if (mq) {
         try {
           if (mq.removeEventListener) mq.removeEventListener("change", mqListener)
-          else if ((mq as any).removeListener) (mq as any).removeListener(mqListener)
+          else if ((mq as MediaQueryList & { removeListener?: (cb: () => void) => void }).removeListener)
+            (mq as MediaQueryList & { removeListener: (cb: () => void) => void }).removeListener(mqListener)
         } catch (_e) {
           /* ignore */
         }

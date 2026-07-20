@@ -199,7 +199,8 @@ const HowItWork = () => {
   };
 
   // Use localized steps when available, fallback to static `steps` above
-  const localizedSteps: any[] = (t("howItWork.steps") as any) || steps;
+  const localizedSteps: Array<Partial<typeof steps[0]>> =
+    (t("howItWork.steps") as Array<Partial<typeof steps[0]>>) || steps;
 
   // Merge static `steps` (illustration/video metadata) with the localized
   // title/description/number so the toggle language option actually

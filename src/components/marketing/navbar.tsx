@@ -30,7 +30,17 @@ const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const { locale, setLocale, t } = useLocale();
-  const [isDark, setIsDark] = useState(false);
+  const [isDark, setIsDark] = useState(
+    () =>
+      typeof window !== "undefined" &&
+      (() => {
+        const saved = localStorage.getItem("do-theme");
+        const prefersDark =
+          saved === "dark" ||
+          (!saved && window.matchMedia("(prefers-color-scheme: dark)").matches);
+        return prefersDark;
+      })()
+  );
   const [logoImageFailed, setLogoImageFailed] = useState(false);
 
   useEffect(() => {
@@ -55,13 +65,12 @@ const Navbar = () => {
     };
   }, [isMobileMenuOpen]);
 
-  // Initialize theme from saved preference or system setting
+  // Apply saved/system theme to <html> on mount
   useEffect(() => {
     const saved = localStorage.getItem("do-theme");
     const prefersDark =
       saved === "dark" ||
       (!saved && window.matchMedia("(prefers-color-scheme: dark)").matches);
-    setIsDark(prefersDark);
     document.documentElement.classList.toggle("dark", prefersDark);
   }, []);
 
