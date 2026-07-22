@@ -5,7 +5,6 @@ import { Link, useNavigate } from "react-router-dom";
 import { Eye, EyeOff } from "lucide-react";
 import { useService } from "@/di/context";
 import { TOKENS } from "@/di/container";
-import { ApiClient } from "@/services/apiClient";
 import { AuthService } from "@/services/authService";
 import { Seo } from "@/components/Seo";
 import { shadowButton, shadowInput, cn } from "@/lib/utils";
@@ -14,7 +13,6 @@ const Login = () => {
   const { t } = useLocale();
   const navigate = useNavigate();
   const auth = useService<AuthService>(TOKENS.AuthService);
-  const api = useService<ApiClient>(TOKENS.ApiClient);
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -211,7 +209,7 @@ const Login = () => {
         {t("login.termsNotice", {
           terms: t("login.termsLink"),
           privacy: t("login.privacyLink"),
-        })}
+        }        ) as unknown as string}
       </p>
     </motion.div>
   );
