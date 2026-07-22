@@ -253,6 +253,23 @@
     "backHome": "Back to home",
     "footer": "© 2026 Do. All rights reserved."
   },
+  "login": {
+    "pageTitle": "Sign in — Do",
+    "eyebrow": "Welcome back",
+    "title": "Sign in to your account",
+    "description": "Access your institution's workspace, content, and communication tools.",
+    "emailLabel": "Email address",
+    "emailPlaceholder": "you@school.edu",
+    "passwordLabel": "Password",
+    "passwordPlaceholder": "••••••••",
+    "submit": "Sign in",
+    "forgotPassword": "Forgot your password?",
+    "noAccount": "Don't have an account?",
+    "registerCta": "Register your school",
+    "termsNotice": "By signing in, you agree to our {terms} and {privacy}.",
+    "termsLink": "Terms of Service",
+    "privacyLink": "Privacy Policy"
+  },
   "about": {
     "eyebrow": "About Do",
     "titleLine1": "We're replacing",
@@ -409,6 +426,9 @@
     "submit": "Join the waitlist",
     "successTitle": "You're on the list.",
     "successDescription": "We'll be in touch when spots open up. Until then, we're building in public.",
-    "note": "No credit card required. We respect your privacy."
+    "note": "No credit card required. We respect your privacy.",
+    "whatsAppTitle": "Stay in the loop — join the support group",
+    "whatsAppDescription": "Want to learn more about how Do is built and the advantages of being on the waitlist? Join our WhatsApp support group.",
+    "whatsAppCta": "Join WhatsApp Support Group"
   }
 }

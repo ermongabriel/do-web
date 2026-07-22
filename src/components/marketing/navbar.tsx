@@ -178,12 +178,12 @@ const Navbar = () => {
 
             <span className="w-px h-5 bg-foreground/10 mx-1" />
 
-            {/* <a
+            <a
               href="/auth/login"
               className={`text-foreground/70 hover:text-foreground transition-all duration-500 whitespace-nowrap ${isScrolled ? "text-xs" : "text-sm"}`}
             >
               {t("nav.signIn")}
-            </a> */}
+            </a>
             <Link to="/auth/waitlist">
               <Button
                 size="sm"
@@ -277,15 +277,15 @@ const Navbar = () => {
             }`}
             style={{ transitionDelay: isMobileMenuOpen ? "300ms" : "0ms" }}
           >
-            {/* <Link to={"/auth/login"} className="flex-1">
+            <Link to={"/auth/login"} className="flex-1">
               <Button
                 variant="outline"
-                className={`w-full rounded-none h-14 text-base ${shadowButtonClasses}`}
+                className={`w-full rounded-none h-14 text-base ${shadowButton}`}
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 {t("nav.signIn")}
               </Button>
-            </Link> */}
+            </Link>
             <Link to={"/auth/waitlist"} className="flex-1">
               <Button
                 className={`w-full bg-gradient-primary text-primary-foreground rounded-none h-14 text-base ${shadowButton}`}

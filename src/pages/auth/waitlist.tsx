@@ -4,6 +4,9 @@ import { useLocale } from "@/locale";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Check } from "lucide-react";
 import { shadowInput, shadowButton } from "@/lib/utils";
+import { useService } from "@/di/context";
+import { TOKENS } from "@/di/container";
+import { ApiClient, ApiError } from "@/services/apiClient";
 
 type FormState = {
   firstName: string;
@@ -14,6 +17,7 @@ type FormState = {
 
 const Waitlist = () => {
   const { t } = useLocale();
+  const api = useService<ApiClient>(TOKENS.ApiClient);
   const [form, setForm] = useState<FormState>({
     firstName: "",
     lastName: "",
@@ -21,6 +25,9 @@ const Waitlist = () => {
     email: "",
   });
   const [submitted, setSubmitted] = useState(false);
+  const [isNotOwner, setIsNotOwner] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
     document.title = t("waitlist.pageTitle");
@@ -29,10 +36,31 @@ const Waitlist = () => {
   const update = (key: keyof FormState) => (e: React.ChangeEvent<HTMLInputElement>) =>
     setForm((prev) => ({ ...prev, [key]: e.target.value }));
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!form.email) return;
-    setSubmitted(true);
+
+    setLoading(true);
+    setError(null);
+
+    try {
+      await api.post<{ id: string }>("/waitlist", {
+        firstName: form.firstName,
+        lastName: form.lastName,
+        email: form.email,
+        schoolName: isNotOwner ? undefined : form.school || undefined,
+      });
+      setSubmitted(true);
+    } catch (err) {
+      if (err instanceof ApiError) {
+        const body = err.body as { message?: string };
+        setError(body?.message || `Something went wrong (${err.status})`);
+      } else {
+        setError("Something went wrong. Please try again.");
+      }
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -131,9 +159,28 @@ const Waitlist = () => {
               onChange={update("school")}
               placeholder={t("waitlist.schoolPlaceholder")}
               autoComplete="organization"
-              className={`w-full px-5 py-4 ${shadowInput}`}
+              disabled={isNotOwner}
+              className={`w-full px-5 py-4 ${shadowInput} ${isNotOwner ? "opacity-50 cursor-not-allowed" : ""}`}
               style={{ boxShadow: "4px 4px 0px 0px var(--foreground)" }}
             />
+          </div>
+
+          <div className="flex items-center gap-3">
+            <input
+              id="isNotOwner"
+              type="checkbox"
+              checked={isNotOwner}
+              onChange={(e) => {
+                setIsNotOwner(e.target.checked);
+                if (e.target.checked) {
+                  setForm((prev) => ({ ...prev, school: "" }));
+                }
+              }}
+              className="w-5 h-5 cursor-pointer accent-foreground"
+            />
+            <label htmlFor="isNotOwner" className="text-sm cursor-pointer text-muted-foreground">
+              {t("waitlist.notOwnerLabel", "I'm not the owner of this school")}
+            </label>
           </div>
 
           <div className="relative">
@@ -153,16 +200,23 @@ const Waitlist = () => {
             />
           </div>
 
+          {error && (
+            <p className="text-sm text-red-500 text-center">{error}</p>
+          )}
+
           <Button
             type="submit"
             size="lg"
-            className={`w-full bg-gradient-primary rounded-none border-2 border-solid border-foreground text-primary-foreground ${shadowButton}`}
+            disabled={loading}
+            className={`w-full bg-gradient-primary rounded-none border-2 border-solid border-foreground text-primary-foreground ${shadowButton} ${
+              loading ? "opacity-70 cursor-wait" : ""
+            }`}
           >
-            {t("waitlist.submit")}
-            <ArrowRight className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" />
+            {loading ? "Submitting..." : t("waitlist.submit")}
+            {!loading && <ArrowRight className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" />}
           </Button>
         </form>
-      ) : (
+        ) : (
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
@@ -180,6 +234,15 @@ const Waitlist = () => {
           <p className="text-muted-foreground">
             {t("waitlist.successDescription")}
           </p>
+          <a
+            href="https://chat.whatsapp.com/IJ7vvEj2om0BpG8zt9PsyT"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center gap-2 px-6 py-3 border-2 border-solid border-foreground bg-white text-foreground hover:bg-gray-50 transition-colors"
+            style={{ boxShadow: "4px 4px 0px 0px var(--foreground)" }}
+          >
+            <span>{t("waitlist.whatsAppCta")}</span>
+          </a>
         </motion.div>
       )}
 

@@ -253,6 +253,23 @@
     "backHome": "Retour à l'accueil",
     "footer": "© 2026 Do. Tous droits réservés."
   },
+  "login": {
+    "pageTitle": "Connexion — Do",
+    "eyebrow": "Bon retour",
+    "title": "Connectez-vous à votre compte",
+    "description": "Accédez à l'espace de travail, au contenu et aux outils de communication de votre institution.",
+    "emailLabel": "Adresse email",
+    "emailPlaceholder": "vous@ecole.edu",
+    "passwordLabel": "Mot de passe",
+    "passwordPlaceholder": "••••••••",
+    "submit": "Se connecter",
+    "forgotPassword": "Mot de passe oublié ?",
+    "noAccount": "Vous n'avez pas de compte ?",
+    "registerCta": "Inscrire votre établissement",
+    "termsNotice": "En vous connectant, vous acceptez nos {terms} et notre {privacy}.",
+    "termsLink": "Conditions d'utilisation",
+    "privacyLink": "Politique de confidentialité"
+  },
   "about": {
     "eyebrow": "À propos de Do",
     "titleLine1": "Nous remplaçons",
@@ -409,6 +426,9 @@
     "submit": "Rejoindre la liste",
     "successTitle": "Vous êtes sur la liste.",
     "successDescription": "Nous vous contacterons quand des places seront disponibles. En attendant, nous construisons au grand jour.",
-    "note": "Aucune carte bancaire requise. Nous respectons votre vie privée."
+    "note": "Aucune carte bancaire requise. Nous respectons votre vie privée.",
+    "whatsAppTitle": "Restez informé — rejoignez le groupe de support",
+    "whatsAppDescription": "Vous souhaitez en savoir plus sur la construction de Do et les avantages d'être sur la liste d'attente ? Rejoignez notre groupe de support WhatsApp.",
+    "whatsAppCta": "Rejoindre le groupe de support WhatsApp"
   }
 }
