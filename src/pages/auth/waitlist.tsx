@@ -238,7 +238,7 @@ const Waitlist = () => {
             href="https://chat.whatsapp.com/IJ7vvEj2om0BpG8zt9PsyT"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center gap-2 px-6 py-3 border-2 border-solid border-foreground bg-white text-foreground hover:bg-gray-50 transition-colors"
+            className="inline-flex items-center justify-center gap-2 px-6 py-3 border-2 border-solid border-foreground bg-primary text-foreground hover:bg-gray-50 transition-colors"
             style={{ boxShadow: "4px 4px 0px 0px var(--foreground)" }}
           >
             <span>{t("waitlist.whatsAppCta")}</span>
